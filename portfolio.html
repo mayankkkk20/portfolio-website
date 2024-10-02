@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 33);
+            color: aliceblue;
+            background-image: url(webbg.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(18, 18, 62);
+            opacity: 45%;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.5);
+            opacity: 100%;
+        }
+
+        nav ul li {
+            list-style: none;
+            color: white;
+            margin: 0 33px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: white;
+            font-size: 1.04rem;
+            opacity: 100%;
+        }
+
+
+        .left {
+            font-size: 1.7rem;
+            margin-right: 240px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin-top: 171px;
+            margin-left: 140px;
+
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            background-color: #12123e;
+            color: white;
+            padding: 5px;
+            /* margin: 2px; */
+            BORDER: solid white;
+            font-size: 19px;
+            border-radius: 5px;
+            cursor: grab;
+        }
+
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(173, 173, 244);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.8rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #232458;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            color: gray;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .lamp-container {
+            position: absolute;
+            top: -176px;
+            left: 22%;
+            width: 200px;
+        }
+
+        .light {
+            position: absolute;
+            top: 96%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            margin-left: -10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .lamp {
+            width: 100%;
+
+        }
+
+        button.lamp {
+            background: #efefef;
+            height: 20px;
+            width: 40px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            margin-top: 1px;
+            transition: background 0.5s;
+        }
+
+        button span {
+            display: block;
+            background: #999;
+            height: 18px;
+            width: 18px;
+            border-radius: 50%;
+            margin-left: 1px;
+            transition: background 0.5s, margin-left 0.5s;
+        }
+
+        .active {
+            background: green;
+        }
+
+        .active span {
+            background: rgb(7, 0, 82);
+            margin-left: 20px;
+        }
+
+        .on {
+            opacity: 1;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!img src="webbg.avif" alt="">
+        <!-- <img src="C:\Users\Mayank Kumar\Downloads\lampbg.png" alt="lamp image"> -->
+        <header>
+            <!img src="C:\Users\Mayank Kumar\Downloads\lampbg.png" alt="">
+                <nav>
+
+
+                    <div class="lamp-container">
+                        <img src="C:\Users\Mayank Kumar\AppData\Local\Temp\8df7e2b4-6f46-40e4-a28c-967bf45f5dac_vueLamp_img.zip.dac\images\lamp.png"
+                            alt="" class="lamp">
+                        <img src="C:\Users\Mayank Kumar\AppData\Local\Temp\66421f7e-f30e-46f4-b535-3062e647be74_vueLamp_img.zip.e74\images\light.png"
+                            alt="" class="light" id="light">
+                    </div>
+                    <div class="content">
+                        <button id="toggleButton">Toggle Background Image</button>
+                    </div>
+                    <!img src="C:\Users\Mayank Kumar\Downloads\lampbg.png" alt="" class="lamp">
+                        <div class="left">Mayank's Portfolio
+                        </div>
+                        <div class="right">
+                            <!-- <img src="C:\Users\Mayank Kumar\Downloads\lampbg.png" alt="">  -->
+                            <ul>
+                                <li><a href="">home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Projects</a></li>
+                                <li><a href="">Contact me</a></li>
+                                <button class="lamp" type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+                            </ul>
+                        </div>
+                </nav>
+        </header>
+
+        <main>
+            <!-- <img src="C:\Users\Mayank Kumar\Downloads\lampbg.png" alt=""> -->
+            <section class="firstsection">
+                <div class="leftsection">
+                    hello , my name is <span class="purple"> mayank</span>
+                    <div>and i am a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">Download Resume</button>
+                        <button class="btn"> Visit Github</button>
+                    </div>
+                </div>
+                <div class="rightsection">
+                    <img src="developerrr.png" alt="web deveplor">
+                    <!-- <img src="lampbg.png" alt=""> -->
+                </div>
+            </section>
+            <hr><br><br>
+            <section class="secondsection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="html logo.png" alt="">
+                        <div class="vertical-title">
+                            HTML Developer (2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto voluptates
+                            necessitatibus illum amet saepe excepturi possimus. Repellat consequatur perspiciatis quo
+                            perferendis vel.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="developer.png" alt="">
+                        <div class="vertical-title">
+                            Node.js Developer (2012-2014)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto voluptates
+                            necessitatibus illum amet saepe excepturi possimus. Repellat consequatur perspiciatis quo
+                            perferendis vel.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="twitter.png" alt="">
+                        <div class="vertical-title">
+                            HTML Developer (2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto voluptates
+                            necessitatibus illum amet saepe excepturi possimus. Repellat consequatur perspiciatis quo
+                            perferendis vel.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="watsapp logo.png" alt="">
+                        <div class="vertical-title">
+                            HTML Developer (2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto voluptates
+                            necessitatibus illum amet saepe excepturi possimus. Repellat consequatur perspiciatis quo
+                            perferendis vel.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="utube.png" alt="">
+                        <div class="vertical-title">
+                            HTML Developer (2010-2012)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto voluptates
+                            necessitatibus illum amet saepe excepturi possimus. Repellat consequatur perspiciatis quo
+                            perferendis vel.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Mayank's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="footer-rights">
+                Copyright &#169; mayank'sportfolio.com | All Rights Reserved
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['web developer', 'graphic designer', 'web designer', 'video editor'],
+                typeSpeed: 50,
+            });
+        </script>
+        <script>
+            var Btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+
+            function toggleBtn() {
+                Btn.classList.toggle("active");
+                light.classList.toggle("on");
+            }
+        </script>
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleButton = document.getElementById('toggleButton');
+                const body = document.body;
+
+                toggleButton.addEventListener('click', function () {
+                    if (getComputedStyle(body).backgroundImage !== 'none') {
+                        body.style.backgroundImage = 'none';
+                    } else {
+                        body.style.backgroundImage = "url(webbg.avif)";
+
+
+        </script>
+</body>
+
+</html>
